@@ -16,8 +16,6 @@ Python Web Scraper
 pip install git+https://github.com/bigpicture-kr/default-scraper.git
 ```
 
-It may require authentication before installing since default-scraper is a private repository of [bigpicture-kr](https://github.com/bigpicture-kr) organization.
-
 ### Scrap Instagram contents in python script
 
 ```python
