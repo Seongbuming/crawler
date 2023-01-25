@@ -1,0 +1,14 @@
+README.md
+setup.py
+default_scraper/__init__.py
+default_scraper.egg-info/PKG-INFO
+default_scraper.egg-info/SOURCES.txt
+default_scraper.egg-info/dependency_links.txt
+default_scraper.egg-info/requires.txt
+default_scraper.egg-info/top_level.txt
+default_scraper.egg-info/zip-safe
+default_scraper/instagram/__init__.py
+default_scraper/instagram/dto.py
+default_scraper/instagram/parser.py
+default_scraper/instagram/signin.py
+default_scraper/instagram/webdriver.py

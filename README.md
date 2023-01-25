@@ -13,6 +13,12 @@ Python Web Scraper
 ### Install
 
 ```bash
+pip install default-scraper
+```
+
+or
+
+```bash
 pip install git+https://github.com/Seongbuming/crawler.git
 ```
 
