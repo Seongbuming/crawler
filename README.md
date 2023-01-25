@@ -13,7 +13,7 @@ Python Web Scraper
 ### Install
 
 ```bash
-pip install git+https://github.com/bigpicture-kr/default-scraper.git
+pip install git+https://github.com/Seongbuming/crawler.git
 ```
 
 ### Scrap Instagram contents in python script
