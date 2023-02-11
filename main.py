@@ -10,20 +10,20 @@ if __name__ == "__main__":
         help="The path of .har file containing the network log of the page to parse.",
     )'''
     arg_parser.add_argument(
-        "--platform",
+        "--platform", "-p",
         type=str,
         required=True,
-        choices=["instagram"],
+        choices=["instagram", "googleplay_review"],
         help="Platform service to be scrap.",
     )
     arg_parser.add_argument(
-        "--keyword",
+        "--keyword", "-k",
         type=str,
         required=True,
         help="Search keyword for which to collect data.",
     )
     arg_parser.add_argument(
-        "--output_file",
+        "--output_file", "-o",
         type=str,
         default=None,
         help="The path to save processed file.",
@@ -41,6 +41,10 @@ if __name__ == "__main__":
     if args.platform == "instagram":
         from default_scraper.instagram.parser import InstagramParser
         parser = InstagramParser(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD, args.keyword, args.all)
+        data = parser.run(args.output_file)
+    elif args.platform == "googleplay_review":
+        from default_scraper.googleplay.review.parser import GooglePlayReviewParser
+        parser = GooglePlayReviewParser(args.keyword)
         data = parser.run(args.output_file)
 
     print(f"{len(data)} data found.")
