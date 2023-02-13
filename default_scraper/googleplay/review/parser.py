@@ -21,7 +21,7 @@ class GooglePlayReviewParser:
         review_ds_keys = self.find_review_ds_keys(contents)
         review_data = self.crawl_review_data(scripts, review_ds_keys)
         
-        if output_file is not None:
+        if output_file is not None and len(output_file) > 0:
             if output_file[-4:].lower() == ".csv":
                 # Save as csv
                 df = pd.DataFrame(review_data)
