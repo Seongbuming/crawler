@@ -7,7 +7,7 @@ def requirements():
 
 setuptools.setup(
     name="default-scraper",
-    version="1.1.0",
+    version="1.1.1",
     license="MIT",
     author="Seongbum Seo",
     author_email="sbumseo@bigpicture.team",
