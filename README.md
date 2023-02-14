@@ -43,6 +43,21 @@ python main.py --platform instagram --keyword {KEYWORD} [--output_file OUTPUT_FI
 
 Use `--all` or `-a` option to also scrap unstructured fields.
 
+### Scrap Google Play Store reviews in python script
+
+```python
+from default_scraper.googleplay.review.parser import GooglePlayReviewParser
+APP_ID = "eco.app.libropia.v2"
+parser = GooglePlayReviewParser(APP_ID)
+parser.run()
+```
+
+### Scrap Google Play Store reviews using bash command
+
+```bash
+python main.py --platform googleplay_review --keyword {APP_ID} [--output_file OUTPUT_FILE]
+```
+
 ## Data description
 
 ### Instagram
@@ -62,6 +77,14 @@ Use `--all` or `-a` option to also scrap unstructured fields.
   - `original_height`
   - `images`
 - Some fields may be missing depending on Instagram's response data.
+
+### Google Play Store Review
+
+- `review_id`
+- `author`
+- `review_text`
+- `rating`
+- `writed_time`
 
 ## Future works
 
