@@ -5,7 +5,7 @@ Python Web Scraper
 ## Features
 
 - Scrap all search results for a keyword entered as an argument.
-- Can be save as `.csv` and `.json`.
+- Can be saved as `.csv` and `.json`.
 - Also collect user data who uploaded contents included in search results.
 
 ## Usage
