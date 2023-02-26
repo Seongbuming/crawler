@@ -5,7 +5,7 @@ Python Web Scraper
 ## Features
 
 - Scrap all search results for a keyword entered as an argument.
-- Can be saved as `.csv` and `.json`.
+- Can be save as `.csv` and `.json`.
 - Also collect user data who uploaded contents included in search results.
 
 ## Usage
@@ -47,7 +47,7 @@ Use `--all` or `-a` option to also scrap unstructured fields.
 
 ```python
 from default_scraper.googleplay.review.parser import GooglePlayReviewParser
-APP_ID = "eco.app.libropia.v2"
+APP_ID = ""
 parser = GooglePlayReviewParser(APP_ID)
 parser.run()
 ```
